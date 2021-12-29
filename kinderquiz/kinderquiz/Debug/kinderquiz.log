@@ -1,0 +1,5 @@
+﻿  glad.c
+  main.cpp
+C:\Users\Lenovo\Desktop\3.2\CG project\kinderquiz\kinderquiz\src\main.cpp(146,25): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  kinderquiz.vcxproj -> C:\Users\Lenovo\Desktop\3.2\CG project\kinderquiz\Debug\kinderquiz.exe
