@@ -2,7 +2,7 @@
 
 using namespace std;
 
-Text::Text(int window_width, int window_height, const char* path) :shader("shaders/text.vs", "shaders/text.fs")
+Text::Text(int window_width, int window_height, const char* path) :shader("./shaders/text.vs", "./shaders/text.fs")
 {
 
     // Set OpenGL options
