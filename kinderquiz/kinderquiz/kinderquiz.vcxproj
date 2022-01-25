@@ -145,9 +145,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\glad.c" />
+    <ClCompile Include="..\..\..\..\..\Desktop\glad.c" />
     <ClCompile Include="src\loadImage.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\textDrop.cpp" />
     <ClCompile Include="text.cpp" />
   </ItemGroup>
   <ItemGroup>
