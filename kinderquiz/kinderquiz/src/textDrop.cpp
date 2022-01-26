@@ -1,24 +1,5 @@
 // Std. Includes
-#include <iostream>
-#include <map>
-#include <string>
-// GLEW
-//#define GLEW_STATIC
-//#include <GLEW/glew.h>
-#include <GLEW/glew.h>
-// GLFW
-#include <GLFW/glfw3.h>
-// GLM
-#include <math.h>
-#include <glm/glm.hpp>
-#include <glm/gtc/matrix_transform.hpp>
-#include <glm/gtc/type_ptr.hpp>
-// FreeType
-#include <ft2build.h>
-#include FT_FREETYPE_H
-// GL includes
-#include "../Shader.h"
-#include "../text.h"
+#include "../MainScreen.h"
 
 // Properties
 const unsigned int WIDTH = 800, HEIGHT = 600;
@@ -34,28 +15,8 @@ using namespace std;
 // The MAIN function, from here we start our application and run the Game loop
 int main()
 {
-    // Init GLFW
-    glfwInit();
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-    glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
-
-    GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "KinderQuiz", nullptr, nullptr); // Windowed
-    glfwMakeContextCurrent(window);
-
-    // Initialize GLEW to setup the OpenGL Function pointers
-    glewExperimental = GL_TRUE;
-    glewInit();
-
-    // Define the viewport dimensions
-    glViewport(0, 0, WIDTH, HEIGHT);
-    glMatrixMode(GL_PROJECTION); // projection matrix defines the properties of the camera that views the objects in the world coordinate frame. Here you typically set the zoom factor, aspect ratio and the near and far clipping planes
-    glLoadIdentity(); // replace the current matrix with the identity matrix and starts us a fresh because matrix transforms such as glOrpho and glRotate cumulate, basically puts us at (0, 0, 0)
-    glOrtho(0, WIDTH, 0, HEIGHT, 0, 1); // essentially set coordinate system
-    glMatrixMode(GL_MODELVIEW); // (default matrix mode) modelview matrix defines how your objects are transformed (meaning translation, rotation and scaling) in your world
-    glLoadIdentity(); // same as above comment
-
+    MainScreen screen;
+    GLFWwindow* window = screen.initializeWindow();
     Text text(WIDTH, HEIGHT, "./fonts/Calibri.ttf");
 
     // Game loop
@@ -94,3 +55,4 @@ int main()
     glfwTerminate();
     return 0;
 }
+

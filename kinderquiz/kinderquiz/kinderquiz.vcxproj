@@ -88,7 +88,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\GLM;$(SolutionDir)Dependencies\FREETYPE\include;$(SolutionDir)Dependencies\GLFW\include;$(SolutionDir)Dependencies\GLEW\include;$(SolutionDir)Dependencies\glad\include;$(SolutionDir)Dependencies\other;$(SolutionDir)Dependencies\GLUT\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\GLM;$(SolutionDir)Dependencies\FREETYPE\include;$(SolutionDir)Dependencies\GLFW\include;$(SolutionDir)Dependencies\GLEW\include;$(SolutionDir)Dependencies\glad\include;$(SolutionDir)Dependencies\other;$(SolutionDir)Dependencies\GLUT\include;$(SolutionDir)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -145,20 +145,35 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\Desktop\glad.c" />
+    <ClCompile Include="..\..\..\..\Downloads\glad.c" />
+    <ClCompile Include="EBO.cpp" />
+    <ClCompile Include="MainScreen.cpp" />
+    <ClCompile Include="shaderClass.cpp" />
     <ClCompile Include="src\loadImage.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\textDrop.cpp" />
     <ClCompile Include="text.cpp" />
+    <ClCompile Include="VAO.cpp" />
+    <ClCompile Include="VBO.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="EBO.h" />
+    <ClInclude Include="MainScreen.h" />
     <ClInclude Include="Shader.h" />
-    <ClInclude Include="src\shader_s.h" />
+    <ClInclude Include="shaderClass.h" />
     <ClInclude Include="text.h" />
+    <ClInclude Include="VAO.h" />
+    <ClInclude Include="VBO.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\..\Projects\kinderquiz\kinderquiz\kinderquiz\shaders\text.fs" />
+    <None Include="..\..\..\Projects\kinderquiz\kinderquiz\kinderquiz\shaders\text.vs" />
+    <None Include="default.vert" />
     <None Include="src\fragment_shader.fs" />
     <None Include="src\vertex_shader.vs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="default.frg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
