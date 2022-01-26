@@ -1,4 +1,0 @@
-﻿  loadImage.cpp
-C:\Users\User\Desktop\kinderquiz\kinderquiz\kinderquiz\src\loadImage.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
-  kinderquiz.vcxproj -> C:\Users\User\Desktop\kinderquiz\kinderquiz\Debug\kinderquiz.exe
