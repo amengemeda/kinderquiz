@@ -111,7 +111,7 @@ int smain()
         }
 
         */
-        
+
 
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
         // -------------------------------------------------------------------------------

@@ -32,8 +32,8 @@ using namespace std;
 class MainScreen
 {
 public:
-	 unsigned int SCR_WIDTH;
-	 unsigned int SCR_HEIGHT;
+	unsigned int SCR_WIDTH;
+	unsigned int SCR_HEIGHT;
 	MainScreen();
 	GLFWwindow* initializeWindow();
 	GLuint createTexture();
