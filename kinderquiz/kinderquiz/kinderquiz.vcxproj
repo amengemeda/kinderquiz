@@ -145,20 +145,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\glad.c" />
+    <ClCompile Include="..\..\..\..\Downloads\glad.c" />
     <ClCompile Include="EBO.cpp" />
+    <ClCompile Include="FirstScreen.cpp" />
     <ClCompile Include="MainScreen.cpp" />
     <ClCompile Include="shaderClass.cpp" />
     <ClCompile Include="src\loadImage.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\textDrop.cpp" />
-    <ClCompile Include="TestText.cpp" />
     <ClCompile Include="text.cpp" />
     <ClCompile Include="VAO.cpp" />
     <ClCompile Include="VBO.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="EBO.h" />
+    <ClInclude Include="FirstScreen.h" />
     <ClInclude Include="MainScreen.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="shaderClass.h" />

@@ -45,10 +45,10 @@
     <ClCompile Include="MainScreen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TestText.cpp">
+    <ClCompile Include="..\..\..\..\Downloads\glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\glad.c">
+    <ClCompile Include="FirstScreen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -72,6 +72,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MainScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FirstScreen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
