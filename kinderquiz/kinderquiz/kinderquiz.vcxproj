@@ -150,6 +150,7 @@
     <ClCompile Include="FirstScreen.cpp" />
     <ClCompile Include="MainScreen.cpp" />
     <ClCompile Include="shaderClass.cpp" />
+    <ClCompile Include="SplashScreen.cpp" />
     <ClCompile Include="src\loadImage.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\textDrop.cpp" />
@@ -163,6 +164,7 @@
     <ClInclude Include="MainScreen.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="shaderClass.h" />
+    <ClInclude Include="SplashScreen.h" />
     <ClInclude Include="text.h" />
     <ClInclude Include="VAO.h" />
     <ClInclude Include="VBO.h" />
