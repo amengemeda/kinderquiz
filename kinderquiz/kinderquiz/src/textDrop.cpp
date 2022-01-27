@@ -13,7 +13,7 @@ GLfloat m = 500.0f;
 
 using namespace std;
 // The MAIN function, from here we start our application and run the Game loop
-int main()
+/*int main()
 {
     MainScreen screen;
     GLFWwindow* window = screen.initializeWindow();
@@ -54,5 +54,5 @@ int main()
 
     glfwTerminate();
     return 0;
-}
+}*/
 

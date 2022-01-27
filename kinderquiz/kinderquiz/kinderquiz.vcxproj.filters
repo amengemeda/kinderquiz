@@ -42,10 +42,13 @@
     <ClCompile Include="EBO.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MainScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\..\Downloads\glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MainScreen.cpp">
+    <ClCompile Include="FirstScreen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -71,16 +74,13 @@
     <ClInclude Include="MainScreen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="FirstScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="src\fragment_shader.fs" />
     <None Include="src\vertex_shader.vs" />
-    <None Include="..\..\..\Projects\kinderquiz\kinderquiz\kinderquiz\shaders\text.fs">
-      <Filter>Resource Files\shaders</Filter>
-    </None>
-    <None Include="..\..\..\Projects\kinderquiz\kinderquiz\kinderquiz\shaders\text.vs">
-      <Filter>Resource Files\shaders</Filter>
-    </None>
     <None Include="default.vert">
       <Filter>Resource Files\shaders</Filter>
     </None>

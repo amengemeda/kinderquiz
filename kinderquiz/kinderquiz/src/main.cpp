@@ -1,15 +1,16 @@
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
-#include <iostream>
 
+#include <Windows.h>
+#include <GLEW/glew.h>
+#include <GLUT\freeglut.h>
+#include <iostream>
+#include "../FirstScreen.h"
 using namespace std;
 
 
+int main(int argc, char* argv[]) {
 
-
-/*int main()
-{
-    cout << "Hello World!";
-    return 0;
-}*/
+	FirstScreen screen;
+	screen.display(argc, argv);
+	return 0;
+}
 
